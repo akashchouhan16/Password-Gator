@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordGator</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/asset/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/0209c22901.js" crossorigin="anonymous"></script>
+    
+</head>
+<body class="draggable">
+    <div class="container">
+        <h2>PasswordGator</h2>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label>Password length</label>
+                <input type="number" id="length" min='2' max='18' value='10' />
+            </div>
+            <div class="setting">
+                <label>Include uppercase letters</label>
+                <input type="checkbox" id="uppercase" checked />
+            </div>
+            <div class="setting">
+                <label>Include lowercase letters</label>
+                <input type="checkbox" id="lowercase" checked />
+            </div>
+            <div class="setting">
+                <label>Include numbers</label>
+                <input type="checkbox" id="numbers" unchecked />
+            </div>
+            <div class="setting">
+                <label>Include symbols</label>
+                <input type="checkbox" id="symbols" unchecked />
+            </div>
+        </div>
+        <button class="btn btn-large generate" id="generate" >
+            Generate password
+        </button>
+    </div>   
+    
+    <div class="floating-text tab1">Created by Akash Chouhan &copy; <a href="https://github.com/akashchouhan16" target="_blank"><i class="fab fa-github tab1"></i></a>    
+        <a href="https://twitter.com/Akash_Chouhan_ " target="_blank" style="color: rgb(22, 176, 223); text-decoration: none;"> <i class="fab fa-twitter"></i></a>    <a href="https://www.instagram.com/akashchouhan16/" target="_blank" style="color: rgb(248, 87, 87); text-decoration: none;"><i class="fab fa-instagram"></i></a>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
